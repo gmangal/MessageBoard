@@ -1,0 +1,56 @@
+/* stylesheet for message board final project */
+
+body {
+    background-color:#F0FFF0
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+input {
+    margin: 10px 3px;
+}
+
+td {
+    text-align: center;
+}
+
+.name {
+    width: 500px;
+}
+
+.numsomething {
+    width: 50px;
+}
+
+.username {
+    width: 100px;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.message {
+    width: 300px;
+    text-align: left;
+    padding: 5px;
+}
+
+#poststable {
+    margin-left: 20px;
+}
+
+.posttextarea {
+    width: 280px;
+}
+
+
+
+

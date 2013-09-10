@@ -1,0 +1,16 @@
+SELECT `categories`.`id`, `categories`.`name`,
+   COUNT(DISTINCT topics.id) as topics,
+   COUNT(DISTINCT posts.id) as posts
+FROM `categories` 
+LEFT JOIN `topics` ON `categories`.`id` = `topics`.`categoryid` 
+LEFT JOIN `posts` ON `topics`.`id` = `posts`.`topicid`
+GROUP BY categories.id
+;
+
+SELECT `topics`.`id`, `topics`.`name`,
+    COUNT(DISTINCT posts.id) as posts
+FROM `topics`
+LEFT JOIN `posts` ON `topics`.`id` = `posts`.`topicid`
+WHERE `category` = 1
+GROUP BY topics.id
+;
